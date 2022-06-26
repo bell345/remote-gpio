@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  server:
+    build: .
+    restart: always
+    volumes:
+      - /dev/gpiomem:/dev/gpiomem
+      - ./remotegpio:/app/remotegpio
+    ports:
+      - "8000:80"
