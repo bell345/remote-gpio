@@ -2,7 +2,7 @@
 Description=Remote GPIO HTTP server
 After=network.target
 [Service]
-ExecStart=/usr/bin/bash local-run.sh
+ExecStart=/usr/bin/bash /srv/http/remote-gpio/local-run.sh
 Restart=always
 User=net-user
 [Install]
